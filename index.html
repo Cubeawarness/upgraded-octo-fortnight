@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>click me</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+  </head>  
+  <body> 
+    <h1 class="center">
+      Calculate me
+    </h1>
+     <input id="a1" type="text" placeholder="first value" class="input">
+     <input id="a2" type="text" placeholder="second value" class="input">
+     <br>
+     <button class="button" id="b1" onclick="multiply()">
+       *
+     </button>
+     <button class="button" id="b2" onclick="separate()">
+       /
+     </button>
+     <button class="button" id="b3" onclick="add()">
+      +
+     </button>
+     <button id="b4" class="button" onclick="subtract()">
+       -
+     </button>
+    
+    <button id="reset" onclick="reset()" class="orange" >
+      reset
+    </button>
+    
+    <button onclick="exponentiation()" class="button">
+      exp
+    </button>
+    
+    <form>
+      <button type="reset" class="orange">
+       clear
+     </button>
+    
+     <script language="JavaScript">
+       
+       function multiply ()
+       {
+         let a1=document.getElementById("a1").value;
+         let a2=document.getElementById("a2").value;
+         s=parseInt(a1)*parseInt(a2);
+         document.getElementById("output").value=s;
+       }
+       function separate ()
+       {
+         let a1=document.getElementById("a1").value;
+         let a2=document.getElementById("a2").value;
+         s=parseInt(a1)/parseInt(a2);
+         document.getElementById("output").value=s;
+         
+       }
+       function add ()
+       {
+       //e.preventDefault();
+         let a1=document.getElementById("a1").value;
+         let a2=document.getElementById("a2").value;
+         s=parseInt(a1)+parseInt(a2);
+         document.getElementById("output").value=s;
+         
+       }
+       function subtract ()
+       {
+         let a1=document.getElementById("a1").value;
+         let a2=document.getElementById("a2").value;
+         s=parseInt(a1)-parseInt(a2);
+         document.getElementById("output").value=s;
+       }
+       
+       function reset()
+       {
+         document.getElementById("a1").value=" ";
+         document.getElementById("a2").value=" ";
+         document.getElementById("output").value=" ";
+       }
+       
+       function star()
+       {
+         let pic = document.getElementById("stararea");
+         if(pic.style.display==="none")
+         {pic.style.display="block";}
+         else {pic.style.display="none";}
+       }
+       
+       function exponentiation()
+       {
+         let a1=document.getElementById("a1").value;
+         let a2=document.getElementById("a2").value;
+         a3 = a1**a2;
+         document.getElementById("output").value=a3;
+       }
+       
+       /*function party()
+       {
+         var sp = document.getElementById("sel");
+         //var asp = Element.getElementsByTagName("input");
+         var kut = document.getElmentById("kut");
+         var wel = document.getElmentById("wel");
+         var ne = document.getElmentById("ne");
+         if(sp.style.display==="none")
+           {
+             sp.style.display="block";
+             var i;
+             var cb = document.getElementsByClassName("check");
+             for(i=0;i<cb.length;i++)
+               {
+                 if (cb.checked)
+                   {
+                     if(cb.value===kutuzov)
+                       {
+                         kut.style.display="block";
+                       }
+                     if(cb.value===wellesley)
+                       {
+                         wel.style.display="block";
+                       }
+                     if(cb.value===ney)
+                       {
+                         ne.style.display="block";
+                       }
+                   }
+               }
+            
+           }
+         else
+           {
+             sp.style.display="none";
+             kut.style.display="none";
+             wel.style.display="none";
+             ne.style.display="none";
+           }
+       }*/
+       
+      </script>
+      
+     <input id="output" placeholder="result" class="input">
+      </form>
+    
+    <button id="star" onclick="star()">
+      show the stars!!1!
+    </button>
+       
+    <div id="stararea" style="display:none">
+      <img src="https://cdn.glitch.com/3ae7397d-d03a-49e7-a664-80e997de3ee3%2Fthumbnails%2FLogotip-Rossijskoj-Armiii.png?1578629423129" width="10%">
+      <img src="https://cdn.glitch.com/3ae7397d-d03a-49e7-a664-80e997de3ee3%2Fthumbnails%2FLogotip-Rossijskoj-Armiii.png?1578629423129" width="10%">
+      <img src="https://cdn.glitch.com/3ae7397d-d03a-49e7-a664-80e997de3ee3%2Fthumbnails%2FLogotip-Rossijskoj-Armiii.png?1578629423129" width="10%">
+    </div>
+      
+  </body>
+</html>
