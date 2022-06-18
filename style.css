@@ -1,0 +1,55 @@
+/* CSS files add styling rules to your content */
+
+
+body {
+  text-align:center;
+  font-family: Courier;
+  margin: 2px;
+  line-height: 4;
+  text-shadow: 4px 6px 0px #2470b5 , -2px -3px 0px #d9190b;
+  background-image: url(http://bgfons.com/upload/camouflage_texture788.jpg);
+}
+
+h1 {
+  font-family: Impact; 
+  font-style: bold;
+  background: #eb1a1a url(https://cdn.glitch.com/3ae7397d-d03a-49e7-a664-80e997de3ee3%2Fthumbnails%2FLogotip-Rossijskoj-Armiii.png?1578629423129);
+  -webkit-background-clip: text;
+  color: #ff7300;
+  text-align: center;
+}
+
+.button {
+  background-color:#d9190b;
+   padding: 5px 10px 5px 10px;
+  border: 4px dashed; 
+  font-family: Courier; 
+}
+
+.orange {
+  background-color:#ff7300;
+  padding: 5px 10px 5px 10px;
+  border: 4px solid;
+  font-family: Courier;
+}
+
+.input {
+  font-family: Courier;
+}
+
+.star1 {
+  backgroung-position: 15% 50%;
+  width: 10%;
+  background-attachment: fixed;
+}
+
+.star2 {
+  backgroung-position: 85% 50%;
+  width: 10%;
+  background-attachment: fixed;
+}
+
+#stararea
+{
+  
+}
